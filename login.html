@@ -1,0 +1,31 @@
+<div class="container container-custom">
+    <form name="loginForm" class="form-signin-register">
+        <div class="col-lg-12 col-xs-12">
+            <h3>Welcome! Please login.</h3>
+        </div>
+
+        <div class="col-lg-12 col-xs-12 signup-field">
+            <div class="col-lg-3 col-xs-3">
+                <p>Username:</p>
+            </div>
+            <div class="col-lg-9 col-xs-9">
+                <input type="text" class="form-control form-control-custom" id="username"
+                       data-ng-model="authCtrl.credential.username" placeholder="Username..."/>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-xs-12 signup-field">
+            <div class="col-lg-3 col-xs-3">
+                <p>Password:</p>
+            </div>
+            <div class="col-lg-9 col-xs-9">
+                <input type="password" class="form-control form-control-custom" id="password"
+                       data-ng-model="authCtrl.credential.password" placeholder="Password..."/>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-xs-12 signup-field signup-button-area">
+            <button class="btn btn-sm primary-button" data-ng-disabled="authCtrl.loading" data-ng-click="authCtrl.login()"><i class="fa fa-sign-in"></i> Sign In</button>
+        </div>
+    </form>
+</div>
